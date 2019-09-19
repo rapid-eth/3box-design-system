@@ -1,7 +1,7 @@
 {
   "name": "react-3box-components",
   "description": "3Box Interface Components",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Kames <info@kamescg.com> (https://www.kamescg.com)",
   "homepage": "https://github.com/rapid-eth/react-3box-components",
   "license": "MIT",
@@ -35,7 +35,7 @@
   "dependencies": {
     "3box": "^1.10.10",
     "idx": "^2.5.6",
-    "web3-design-system": "^1.0.0"
+    "web3-design-system": "^1.1.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.6.0",

@@ -1,7 +1,7 @@
 {
   "name": "react-context-portal",
   "description": "React Portal System",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Kames <info@kamescg.com> (https://www.kamescg.com)",
   "homepage": "https://github.com/KamesCG/react-context-portal",
   "keywords": [
@@ -28,14 +28,14 @@
     "nyc": "cross-env NODE_ENV=test nyc ava"
   },
   "peerDependencies": {
-    "web3-design-system": "^1.0.0",
     "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react-dom": "^16.9.0",
+    "web3-design-system": "^1.0.0"
   },
   "dependencies": {
-    "web3-design-system": "^1.0.0",
     "classnames": "^2.2.6",
-    "prop-types": "^15.7.2"
+    "prop-types": "^15.7.2",
+    "web3-design-system": "^1.1.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.6.0",

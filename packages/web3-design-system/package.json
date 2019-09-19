@@ -1,7 +1,7 @@
 {
   "name": "web3-design-system",
   "description": "Web3 Design System",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Kames <info@kamescg.com> (https://www.kamescg.com)",
   "homepage": "https://github.com/KamesCG/atomic",
   "license": "MIT",
@@ -34,7 +34,7 @@
     "@emotion/styled": "^10.0.17",
     "idx": "^2.5.6",
     "prop-types": "^15.7.2",
-    "react-context-portal": "^1.0.0",
+    "react-context-portal": "^1.1.0",
     "rebass": "^4.0.5",
     "styled-breakpoints": "^6.9.0",
     "styled-by": "^0.3.0",
