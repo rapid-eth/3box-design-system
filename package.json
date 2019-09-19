@@ -1,0 +1,115 @@
+{
+  "name": "horizin-ui",
+  "description": "Horizin Design System",
+  "version": "1.0.0",
+  "author": "Kames <info@kamescg.com> (https://www.kamescg.com)",
+  "homepage": "https://github.com/horizin/horizin-ui",
+  "keywords": [
+    "horizin-ui",
+    "components",
+    "context",
+    "design",
+    "react",
+    "styled"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/horizin/horizin-ui/issues",
+    "email": "info@kamescg.com"
+  },
+  "contributors": [
+    "Kames <info@kamescg.com> (https://www.kamescg.com)"
+  ],
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "build": "lerna run build",
+    "develop": "lerna run develop",
+    "tests": "lerna run test",
+    "reset": "lerna exec --  rm -rf node_modules"
+  },
+  "engines": {
+    "node": ">=8.3"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-react": "^7.0.0",
+    "@commitlint/cli": "latest",
+    "@commitlint/config-conventional": "latest",
+    "ava": "latest",
+    "codecov": "latest",
+    "cross-env": "latest",
+    "eslint": "latest",
+    "eslint-config-xo-lass": "latest",
+    "fixpack": "latest",
+    "husky": "latest",
+    "lerna": "^3.16.4",
+    "lint-staged": "latest",
+    "nodemon": "^1.19.2",
+    "nyc": "latest",
+    "remark-cli": "latest",
+    "remark-preset-github": "latest",
+    "xo": "latest"
+  },
+  "ava": {
+    "failFast": true,
+    "verbose": true,
+    "helpers": [
+      "test/helpers/**/*"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "*.js": [
+      "xo --fix",
+      "git add"
+    ],
+    "*.md": [
+      "remark . -qfo",
+      "git add"
+    ],
+    "package.json": [
+      "fixpack",
+      "git add"
+    ]
+  },
+  "main": "index.js",
+  "nyc": {
+    "check-coverage": true,
+    "lines": 70,
+    "functions": 70,
+    "branches": 70,
+    "reporter": [
+      "lcov",
+      "html",
+      "text"
+    ]
+  },
+  "prettier": {
+    "singleQuote": true,
+    "bracketSpacing": true,
+    "trailingComma": "none"
+  },
+  "remarkConfig": {
+    "plugins": [
+      "preset-github"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/horizin/horizin-ui"
+  },
+  "xo": {
+    "prettier": false,
+    "space": true,
+    "extends": [
+      "xo-lass"
+    ]
+  }
+}

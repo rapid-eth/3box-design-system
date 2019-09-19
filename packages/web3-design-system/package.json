@@ -1,0 +1,138 @@
+{
+  "name": "web3-design-system",
+  "description": "Web3 Design System",
+  "version": "1.0.0",
+  "author": "Kames <info@kamescg.com> (https://www.kamescg.com)",
+  "homepage": "https://github.com/KamesCG/atomic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KamesCG/atomic/issues",
+    "email": "info@kamescg.com"
+  },
+  "contributors": [
+    "Kames <info@kamescg.com> (https://www.kamescg.com)"
+  ],
+  "scripts": {
+    "build": "cross-env BABEL_ENV=production babel src --out-dir lib",
+    "develop": "nodemon --ignore './lib/' --exec cross-env BABEL_ENV=production babel src --out-dir lib",
+    "test": "npm run lint && npm run ava",
+    "test-coverage": "npm run lint && npm run nyc",
+    "ava": "cross-env NODE_ENV=test ava",
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+    "lint": "remark . -qfo",
+    "nyc": "cross-env NODE_ENV=test nyc ava"
+  },
+  "engines": {
+    "node": ">=8.3"
+  },
+  "peerDependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "styled-components": ">= 3"
+  },
+  "dependencies": {
+    "@emotion/styled": "^10.0.17",
+    "idx": "^2.5.6",
+    "prop-types": "^15.7.2",
+    "react-context-portal": "^1.0.0",
+    "rebass": "^4.0.5",
+    "styled-breakpoints": "^6.9.0",
+    "styled-by": "^0.3.0",
+    "styled-is": "^1.3.0",
+    "styled-system": "^5.1.2",
+    "styled-system-html": "^3.0.0",
+    "styled-theme": "^0.3.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-react": "^7.0.0",
+    "@commitlint/cli": "latest",
+    "@commitlint/config-conventional": "latest",
+    "ava": "latest",
+    "codecov": "latest",
+    "cross-env": "latest",
+    "eslint": "latest",
+    "eslint-config-xo-lass": "latest",
+    "fixpack": "latest",
+    "husky": "latest",
+    "lerna": "^3.16.4",
+    "lint-staged": "latest",
+    "nodemon": "^1.19.2",
+    "nyc": "latest",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "remark-cli": "latest",
+    "remark-preset-github": "latest",
+    "styled-components": "^4.3.2",
+    "xo": "latest"
+  },
+  "keywords": [
+    "atomic",
+    "components",
+    "context",
+    "design",
+    "react",
+    "styled"
+  ],
+  "ava": {
+    "failFast": true,
+    "verbose": true,
+    "helpers": [
+      "test/helpers/**/*"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "*.js": [
+      "xo --fix",
+      "git add"
+    ],
+    "*.md": [
+      "remark . -qfo",
+      "git add"
+    ],
+    "package.json": [
+      "fixpack",
+      "git add"
+    ]
+  },
+  "main": "index.js",
+  "nyc": {
+    "check-coverage": true,
+    "lines": 70,
+    "functions": 70,
+    "branches": 70,
+    "reporter": [
+      "lcov",
+      "html",
+      "text"
+    ]
+  },
+  "prettier": {
+    "singleQuote": true,
+    "bracketSpacing": true,
+    "trailingComma": "none"
+  },
+  "remarkConfig": {
+    "plugins": [
+      "preset-github"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KamesCG/atomic"
+  },
+  "xo": {
+    "prettier": false,
+    "space": true,
+    "extends": [
+      "xo-lass"
+    ]
+  }
+}
