@@ -33,7 +33,7 @@ yarn add 3box-design-system
 ## Usage
 
 ```js
-const horizin = require('3box-design-system');
+const BoxDesignSystem = require('3box-design-system');
 
 
 // script
