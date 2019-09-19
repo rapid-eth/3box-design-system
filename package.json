@@ -1,11 +1,11 @@
 {
-  "name": "horizin-ui",
+  "name": "3box-design-system",
   "description": "Horizin Design System",
   "version": "1.0.0",
   "author": "Kames <info@kamescg.com> (https://www.kamescg.com)",
-  "homepage": "https://github.com/horizin/horizin-ui",
+  "homepage": "https://github.com/horizin/3box-design-system",
   "keywords": [
-    "horizin-ui",
+    "3box-design-system",
     "components",
     "context",
     "design",
@@ -14,7 +14,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/horizin/horizin-ui/issues",
+    "url": "https://github.com/horizin/3box-design-system/issues",
     "email": "info@kamescg.com"
   },
   "contributors": [
@@ -103,7 +103,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/horizin/horizin-ui"
+    "url": "https://github.com/horizin/3box-design-system"
   },
   "xo": {
     "prettier": false,

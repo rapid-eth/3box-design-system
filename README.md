@@ -1,12 +1,12 @@
-# Horizin User Interface
+# 3Box Design System
 
-[![build status](https://img.shields.io/travis/com/KamesCG/horizin-ui.svg)](https://travis-ci.com/KamesCG/horizin-ui)
-[![code coverage](https://img.shields.io/codecov/c/github/KamesCG/horizin-ui.svg)](https://codecov.io/gh/KamesCG/horizin-ui)
+[![build status](https://img.shields.io/travis/com/KamesCG/3box-design-system.svg)](https://travis-ci.com/KamesCG/3box-design-system)
+[![code coverage](https://img.shields.io/codecov/c/github/KamesCG/3box-design-system.svg)](https://codecov.io/gh/KamesCG/3box-design-system)
 [![code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![made with lass](https://img.shields.io/badge/made_with-lass-95CC28.svg)](https://lass.js.org)
-[![license](https://img.shields.io/github/license/KamesCG/horizin-ui.svg)](LICENSE)
-[![npm downloads](https://img.shields.io/npm/dt/horizin-ui.svg)](https://npm.im/horizin-ui)
+[![license](https://img.shields.io/github/license/KamesCG/3box-design-system.svg)](LICENSE)
+[![npm downloads](https://img.shields.io/npm/dt/3box-design-system.svg)](https://npm.im/3box-design-system)
 
 ## Table of Contents
 
@@ -20,20 +20,20 @@
 [npm][]:
 
 ```sh
-npm install horizin-ui
+npm install 3box-design-system
 ```
 
 [yarn][]:
 
 ```sh
-yarn add horizin-ui
+yarn add 3box-design-system
 ```
 
 
 ## Usage
 
 ```js
-const horizin = require('horizin-ui');
+const horizin = require('3box-design-system');
 
 
 // script
